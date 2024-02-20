@@ -1,4 +1,22 @@
-# Revisiting the Minimalist Approach to Offline Reinforcement Learning
+# How to run REBRAC (Revisiting the Minimalist Approach to Offline Reinforcement Learning)
+
+```commandline
+docker build -t rebrac .
+```
+To run, mount current directory:
+```commandline
+docker run -it \
+    --gpus=all \
+    --rm \
+    --volume "<PATH_TO_THE_REPO>:/workspace/" \
+    --name rebrac \
+    rebrac bash
+```
+or just run run_docker.sh file, but don't foget to change currtent directory
+
+```commandline
+bash run_docker.sh
+```
 
 [![Twitter](https://badgen.net/badge/icon/twitter?icon=twitter&label)](https://twitter.com/vladkurenkov/status/1659011476642734080) [![arXiv](https://img.shields.io/badge/arXiv-2305.09836-b31b1b.svg)](https://arxiv.org/abs/2305.09836)
 
